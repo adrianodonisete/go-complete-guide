@@ -19,3 +19,8 @@
 
 # Go workspace file
 go.work
+
+
+# files content aplications
+*.log
+*.txt
