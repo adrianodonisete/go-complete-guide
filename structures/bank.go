@@ -73,13 +73,13 @@ func run() bool {
 func balanceFromFile() (float64, error) {
 	data, err := os.ReadFile(FILE_NAME_BALANCE)
 	if err != nil {
-		return 0, errors.New("Failed to read file")
+		return 0, errors.New("failed to read file")
 	}
 
 	balanceText := string(data)
 	balance64, err := strconv.ParseFloat(balanceText, 64)
 	if err != nil {
-		return 0, errors.New("Failed to convert")
+		return 0, errors.New("failed to convert")
 	}
 	return balance64, nil
 }
